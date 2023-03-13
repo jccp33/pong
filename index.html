@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=B612+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./icon.png"/>
+    <link rel="stylesheet" href="./styles.css">
+    <title>PING PONG</title>
+</head>
+
+<body>
+    <div class="header">
+        <a href="../index.html" style="text-decoration: none; font-size: 25px; color: #295095;">
+            <i class="fa fa-home"></i>
+        </a>
+        <h1>PING PONG GAME</h1>
+    </div>
+    <div class="content">
+        <canvas id="canvas" width="600" height="300"></canvas>
+
+        <!--
+        <h3 style="font-family: 'Press Start 2P', Arial; text-align: center">INSTRUCTIONS:</h3>
+        <div class="aligned">
+            <p style="text-align: center;">DESKTOP GAME</p>
+            <br>
+            START:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"ENTER" KEY
+            <br>
+            PURPLE UP:&nbsp;&nbsp;&nbsp;"W" KEY
+            <br>
+            PURPLE DOWN:&nbsp;"S" KEY
+            <br>
+            GREEN UP:&nbsp;&nbsp;&nbsp;&nbsp;"UP" KEY
+            <br>
+            GREEN DOWN:&nbsp;&nbsp;"DOWN" KEY    
+        </div>
+        -->
+    </div>
+
+    <div class="div-controlls float-left">
+        <div class="keys-container">
+            <a href="javascript: MovePurpleUp();" class="key" title="PURPLE UP">
+                <span class="char">W</span>
+            </a>
+        </div>
+        <div class="keys-container">
+            <a href="javascript: MovePurpleDown();" class="key" title="PURPLE DOWN">
+                <span class="char">S</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="div-controlls float-center">
+        <div class="keys-container">
+            <a href="javascript: alert('USE THESE BUTTONS OR KEYBOARD');" class="key exclamation" title="USE THESE BUTTONS OR KEYBOARD">
+                <span class="char">!</span>
+            </a>
+            <a href="javascript: StartGame();" class="key" title="START">
+                <span class="char">ENTER</span>
+            </a>  
+        </div>
+    </div>
+
+    <div class="div-controlls">
+        <div class="keys-container">
+            <a href="javascript: MoveGreenUp();" class="key" title="GREEN UP">
+                <span class="arrow">&#8593;</span>
+            </a>
+        </div>
+        <div class="keys-container">
+            <a href="javascript: MoveGreenDown();" class="key" title="GREEN DOWN">
+                <span class="arrow">&#8595;</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <h3 style="font-size: 35px">GAME OVER</h3>
+            <button id="btn_restart" style="cursor: pointer;">RESTART</button>
+        </div>
+    </div>
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>

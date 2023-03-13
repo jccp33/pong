@@ -1,0 +1,124 @@
+.content{
+    border: 1px solid white;
+}
+#canvas{
+    padding: 0;
+    margin: auto;
+    display: block;
+    background-color: #000;
+}
+
+.modal{
+    font-family: 'Press Start 2P', Arial;
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 5px;
+    width: 50%;
+    text-align: center;
+}
+#btn_restart{
+    font-family: 'Press Start 2P', Arial;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-size: 25px;
+    background-color: red;
+    border-radius: 15px;
+}
+
+.aligned{
+    width: 250px;
+    border: 1px solid white;
+    font-family: 'B612 Mono', monospace, Arial;
+    font-size: 15px;
+    color: #800000;
+    margin: auto;
+}
+
+.header{
+    font-family: 'Press Start 2P', Arial;
+    text-align: center;
+    font-size: 45;
+    color: #0000ff;
+}
+
+.div-controlls{
+    background-color: rgba(0, 0, 0, 0.25);
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    border-radius: 2px;
+}
+
+.float-left{
+    right: auto;
+    left: 8px;
+}
+
+.float-center{
+    right: auto;
+    left: calc((100% - 128px) / 2);
+}
+
+.keys-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.key{
+    background-color: #333333;
+    border: 4px solid #4d4d4d;
+    border-radius: 4px;
+    color: white;
+    margin: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.key:active{
+    opacity: 0.8;
+}
+
+.arrow {
+    width: 44px;
+    height: auto;
+    margin: 2px;
+    font-size: 32px;
+    text-align: center;
+    justify-content: center;
+}
+
+.char{
+    min-width: 44px;
+    height: auto;
+    margin: 2px;
+    padding: 2px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.exclamation{
+    background-color: darkgoldenrod;
+    border: 4px solid yellow;
+}
